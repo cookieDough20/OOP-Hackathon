@@ -1,0 +1,17 @@
+# Production configuration (when needed)
+spring:
+  h2:
+    console:
+      enabled: false
+  
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    com.ridesync: INFO
+    org.springframework.web: WARN
+  file:
+    name: logs/ridesync.log
